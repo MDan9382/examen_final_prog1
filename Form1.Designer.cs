@@ -49,12 +49,15 @@
             this.buttonactualizar = new System.Windows.Forms.Button();
             this.groupBoxacciones = new System.Windows.Forms.GroupBox();
             this.dataGridViewtienda = new System.Windows.Forms.DataGridView();
+            this.groupBoxparametros = new System.Windows.Forms.GroupBox();
+            this.buttonrefrescar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownprecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownexistencias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownentienda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownid)).BeginInit();
             this.groupBoxacciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewtienda)).BeginInit();
+            this.groupBoxparametros.SuspendLayout();
             this.SuspendLayout();
             // 
             // labeltitulo
@@ -81,7 +84,7 @@
             // 
             this.labelproducto.AutoSize = true;
             this.labelproducto.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelproducto.Location = new System.Drawing.Point(13, 50);
+            this.labelproducto.Location = new System.Drawing.Point(6, 15);
             this.labelproducto.Name = "labelproducto";
             this.labelproducto.Size = new System.Drawing.Size(71, 22);
             this.labelproducto.TabIndex = 2;
@@ -91,7 +94,7 @@
             // 
             this.labelprecio.AutoSize = true;
             this.labelprecio.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelprecio.Location = new System.Drawing.Point(13, 90);
+            this.labelprecio.Location = new System.Drawing.Point(6, 54);
             this.labelprecio.Name = "labelprecio";
             this.labelprecio.Size = new System.Drawing.Size(51, 22);
             this.labelprecio.TabIndex = 3;
@@ -101,7 +104,7 @@
             // 
             this.labelexistencias.AutoSize = true;
             this.labelexistencias.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelexistencias.Location = new System.Drawing.Point(13, 130);
+            this.labelexistencias.Location = new System.Drawing.Point(6, 95);
             this.labelexistencias.Name = "labelexistencias";
             this.labelexistencias.Size = new System.Drawing.Size(81, 22);
             this.labelexistencias.TabIndex = 4;
@@ -111,7 +114,7 @@
             // 
             this.labelentienda.AutoSize = true;
             this.labelentienda.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelentienda.Location = new System.Drawing.Point(13, 170);
+            this.labelentienda.Location = new System.Drawing.Point(6, 135);
             this.labelentienda.Name = "labelentienda";
             this.labelentienda.Size = new System.Drawing.Size(72, 22);
             this.labelentienda.TabIndex = 5;
@@ -121,7 +124,7 @@
             // 
             this.labelcategoria.AutoSize = true;
             this.labelcategoria.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelcategoria.Location = new System.Drawing.Point(13, 210);
+            this.labelcategoria.Location = new System.Drawing.Point(6, 175);
             this.labelcategoria.Name = "labelcategoria";
             this.labelcategoria.Size = new System.Drawing.Size(72, 22);
             this.labelcategoria.TabIndex = 6;
@@ -131,7 +134,7 @@
             // 
             this.labelmarca.AutoSize = true;
             this.labelmarca.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmarca.Location = new System.Drawing.Point(13, 250);
+            this.labelmarca.Location = new System.Drawing.Point(6, 214);
             this.labelmarca.Name = "labelmarca";
             this.labelmarca.Size = new System.Drawing.Size(53, 22);
             this.labelmarca.TabIndex = 7;
@@ -139,7 +142,7 @@
             // 
             // textBoxproducto
             // 
-            this.textBoxproducto.Location = new System.Drawing.Point(136, 52);
+            this.textBoxproducto.Location = new System.Drawing.Point(124, 15);
             this.textBoxproducto.Name = "textBoxproducto";
             this.textBoxproducto.Size = new System.Drawing.Size(154, 20);
             this.textBoxproducto.TabIndex = 8;
@@ -147,7 +150,7 @@
             // numericUpDownprecio
             // 
             this.numericUpDownprecio.DecimalPlaces = 2;
-            this.numericUpDownprecio.Location = new System.Drawing.Point(136, 93);
+            this.numericUpDownprecio.Location = new System.Drawing.Point(124, 56);
             this.numericUpDownprecio.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -159,21 +162,21 @@
             // 
             // textBoxmarca
             // 
-            this.textBoxmarca.Location = new System.Drawing.Point(136, 252);
+            this.textBoxmarca.Location = new System.Drawing.Point(124, 217);
             this.textBoxmarca.Name = "textBoxmarca";
             this.textBoxmarca.Size = new System.Drawing.Size(154, 20);
             this.textBoxmarca.TabIndex = 12;
             // 
             // textBoxcategoria
             // 
-            this.textBoxcategoria.Location = new System.Drawing.Point(136, 212);
+            this.textBoxcategoria.Location = new System.Drawing.Point(124, 177);
             this.textBoxcategoria.Name = "textBoxcategoria";
             this.textBoxcategoria.Size = new System.Drawing.Size(154, 20);
             this.textBoxcategoria.TabIndex = 13;
             // 
             // numericUpDownexistencias
             // 
-            this.numericUpDownexistencias.Location = new System.Drawing.Point(136, 132);
+            this.numericUpDownexistencias.Location = new System.Drawing.Point(124, 97);
             this.numericUpDownexistencias.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -185,7 +188,7 @@
             // 
             // numericUpDownentienda
             // 
-            this.numericUpDownentienda.Location = new System.Drawing.Point(136, 172);
+            this.numericUpDownentienda.Location = new System.Drawing.Point(124, 137);
             this.numericUpDownentienda.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -197,7 +200,7 @@
             // 
             // numericUpDownid
             // 
-            this.numericUpDownid.Location = new System.Drawing.Point(136, 12);
+            this.numericUpDownid.Location = new System.Drawing.Point(141, 14);
             this.numericUpDownid.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -225,6 +228,7 @@
             this.buttonbuscar.TabIndex = 18;
             this.buttonbuscar.Text = "buscar";
             this.buttonbuscar.UseVisualStyleBackColor = true;
+            this.buttonbuscar.Click += new System.EventHandler(this.buttonbuscar_Click);
             // 
             // buttonborrar
             // 
@@ -234,6 +238,7 @@
             this.buttonborrar.TabIndex = 19;
             this.buttonborrar.Text = "borrar";
             this.buttonborrar.UseVisualStyleBackColor = true;
+            this.buttonborrar.Click += new System.EventHandler(this.buttonborrar_Click);
             // 
             // buttonactualizar
             // 
@@ -243,6 +248,7 @@
             this.buttonactualizar.TabIndex = 20;
             this.buttonactualizar.Text = "actualizar";
             this.buttonactualizar.UseVisualStyleBackColor = true;
+            this.buttonactualizar.Click += new System.EventHandler(this.buttonactualizar_Click);
             // 
             // groupBoxacciones
             // 
@@ -250,43 +256,65 @@
             this.groupBoxacciones.Controls.Add(this.buttonbuscar);
             this.groupBoxacciones.Controls.Add(this.buttonactualizar);
             this.groupBoxacciones.Controls.Add(this.buttonborrar);
-            this.groupBoxacciones.Location = new System.Drawing.Point(334, 26);
+            this.groupBoxacciones.Location = new System.Drawing.Point(335, 12);
             this.groupBoxacciones.Name = "groupBoxacciones";
             this.groupBoxacciones.Size = new System.Drawing.Size(107, 126);
             this.groupBoxacciones.TabIndex = 22;
             this.groupBoxacciones.TabStop = false;
-            this.groupBoxacciones.Text = "acciones";
+            this.groupBoxacciones.Text = "acciones CRUD";
             // 
             // dataGridViewtienda
             // 
             this.dataGridViewtienda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewtienda.Location = new System.Drawing.Point(323, 172);
+            this.dataGridViewtienda.Location = new System.Drawing.Point(335, 180);
             this.dataGridViewtienda.Name = "dataGridViewtienda";
-            this.dataGridViewtienda.Size = new System.Drawing.Size(505, 150);
+            this.dataGridViewtienda.Size = new System.Drawing.Size(601, 228);
             this.dataGridViewtienda.TabIndex = 21;
+            // 
+            // groupBoxparametros
+            // 
+            this.groupBoxparametros.Controls.Add(this.labelproducto);
+            this.groupBoxparametros.Controls.Add(this.labelprecio);
+            this.groupBoxparametros.Controls.Add(this.labelexistencias);
+            this.groupBoxparametros.Controls.Add(this.numericUpDownexistencias);
+            this.groupBoxparametros.Controls.Add(this.numericUpDownentienda);
+            this.groupBoxparametros.Controls.Add(this.numericUpDownprecio);
+            this.groupBoxparametros.Controls.Add(this.labelentienda);
+            this.groupBoxparametros.Controls.Add(this.textBoxproducto);
+            this.groupBoxparametros.Controls.Add(this.labelcategoria);
+            this.groupBoxparametros.Controls.Add(this.textBoxcategoria);
+            this.groupBoxparametros.Controls.Add(this.labelmarca);
+            this.groupBoxparametros.Controls.Add(this.textBoxmarca);
+            this.groupBoxparametros.Location = new System.Drawing.Point(17, 83);
+            this.groupBoxparametros.Name = "groupBoxparametros";
+            this.groupBoxparametros.Size = new System.Drawing.Size(295, 266);
+            this.groupBoxparametros.TabIndex = 23;
+            this.groupBoxparametros.TabStop = false;
+            this.groupBoxparametros.Text = "parametros de insercion";
+            // 
+            // buttonrefrescar
+            // 
+            this.buttonrefrescar.Location = new System.Drawing.Point(581, 143);
+            this.buttonrefrescar.Name = "buttonrefrescar";
+            this.buttonrefrescar.Size = new System.Drawing.Size(75, 23);
+            this.buttonrefrescar.TabIndex = 24;
+            this.buttonrefrescar.Text = "refrescar";
+            this.buttonrefrescar.UseVisualStyleBackColor = true;
+            this.buttonrefrescar.Click += new System.EventHandler(this.buttonrefrescar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 450);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(882, 450);
+            this.Controls.Add(this.buttonrefrescar);
             this.Controls.Add(this.groupBoxacciones);
             this.Controls.Add(this.dataGridViewtienda);
             this.Controls.Add(this.numericUpDownid);
-            this.Controls.Add(this.numericUpDownentienda);
-            this.Controls.Add(this.numericUpDownexistencias);
-            this.Controls.Add(this.textBoxcategoria);
-            this.Controls.Add(this.textBoxmarca);
-            this.Controls.Add(this.numericUpDownprecio);
-            this.Controls.Add(this.textBoxproducto);
-            this.Controls.Add(this.labelmarca);
-            this.Controls.Add(this.labelcategoria);
-            this.Controls.Add(this.labelentienda);
-            this.Controls.Add(this.labelexistencias);
-            this.Controls.Add(this.labelprecio);
-            this.Controls.Add(this.labelproducto);
             this.Controls.Add(this.labelid);
             this.Controls.Add(this.labeltitulo);
+            this.Controls.Add(this.groupBoxparametros);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownprecio)).EndInit();
@@ -295,6 +323,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownid)).EndInit();
             this.groupBoxacciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewtienda)).EndInit();
+            this.groupBoxparametros.ResumeLayout(false);
+            this.groupBoxparametros.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,6 +353,8 @@
         private System.Windows.Forms.Button buttonactualizar;
         private System.Windows.Forms.GroupBox groupBoxacciones;
         private System.Windows.Forms.DataGridView dataGridViewtienda;
+        private System.Windows.Forms.GroupBox groupBoxparametros;
+        private System.Windows.Forms.Button buttonrefrescar;
     }
 }
 
